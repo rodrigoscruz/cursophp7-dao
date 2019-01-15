@@ -4,7 +4,7 @@ class Sql extends PDO {
     
     private $conn;
     
-    public function _construct(){
+    public function __construct(){
         
         $this->conn = new PDO("mysql:host=localhost;dbname=cadastro","root","");
     }
@@ -13,7 +13,7 @@ class Sql extends PDO {
         
         foreach ($parameters as $key => $value){
             
-            $this->setParam($key,$value);
+            $this->setParam($statment,$key,$value);
         }
     }
     
@@ -36,7 +36,7 @@ class Sql extends PDO {
     public function select($rawQuery,$params = array()):array
     {
         
-        $stmr = $this->query($rawQuery, $params);
+        $stmt = $this->query($rawQuery, $params);
         
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
