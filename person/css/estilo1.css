@@ -1,0 +1,47 @@
+body{
+	background-image: url("../images/fundo.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-clip: padding-box;
+}
+
+.jumbotron{
+	background-color: rgba(0,0,0,0.4);
+	border-radius: 0rem;
+	padding: 0.3rem 2rem;
+	color: #d797b9;
+	text-transform: uppercase;
+	height: 3.75rem;
+	width: 100%;
+}
+
+a{
+	color: #d797b9;
+	transition: 1s;
+}
+
+a:hover{
+	color: white;
+	text-decoration: none;
+	transition: 1s;
+}
+
+.row{
+	width: 65em;
+	height: 30em;
+	margin: auto;
+	background-color: rgba(0,0,0,0.4);
+	border-radius: 2em;
+}
+
+#rodape{
+	background-color: rgba(0,0,0,0.5);
+	height: 60px;
+	text-align: center;
+	font-family: sans-serif;
+	color: #d797b9;
+	font-size: 20px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}

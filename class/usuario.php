@@ -53,12 +53,49 @@ class Usuario {
             
             $row = $results[0];
             
-            $this->setId($row['id']);
-            $this->setLogin($row['persona']);
-            $this->setSenha($row['senha']);
+            $this->setData($results[0]);
         }
         
     }
+    
+    
+    public static function getList(){
+        
+        $sql = new Sql ();
+        
+        return $sql->select("SELECT * FROM login ORDER BY persona;");
+        
+        
+    }
+    
+    
+    public function setData($data){
+        
+        $this->setId($data['id']);
+        $this->setLogin($data['persona']);
+        $this->setSenha($data['senha']);
+        
+    }
+    
+    
+    public function insert(){
+        
+        $sql = new Sql();
+        
+        $results = $sql->select("CALL sp_usuario_insert(:LOGIN, :PASSWORD)", array(
+            ':LOGIN'=>$this->getLogin(),
+            ':PASSWORD'=>$this->getSenha()
+        
+        ));
+         
+        if (count($results) > 0){
+            $this->setData($results[0]);
+            
+        }    
+            
+    }
+    
+    
     
     public function __toString(){
         

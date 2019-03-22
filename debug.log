@@ -1,0 +1,4 @@
+[1220/174926.475:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
+[1220/174931.638:ERROR:process_reader_win.cc(242)] ReadMemory at 0x6cd7f80 of 512 bytes failed: Somente uma parte de um pedido ReadProcessMemory ou WriteProcessMemory foi concluída. (0x12B)
+[1220/174939.797:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
+[1220/174945.365:ERROR:process_reader_win.cc(242)] ReadMemory at 0x7167f80 of 512 bytes failed: Somente uma parte de um pedido ReadProcessMemory ou WriteProcessMemory foi concluída. (0x12B)

@@ -1,0 +1,143 @@
+body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background-image: url("../images/fundo.jpg");
+	height: 100%;
+}
+
+#tudo{
+	min-height: 100%;
+	position: relative;
+}
+
+nav{
+	background-color: rgba(0,0,0,0.5);
+	height: 60px;
+}
+
+nav ul{
+	list-style: none;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 0;
+	display: inline;
+	margin-top: -40%;
+	margin-left: 70%;
+}
+
+nav ul li{
+	padding-top: 1%; 
+
+	display: inline-block;
+
+}
+
+nav ul li a{
+	text-decoration: none;
+	font-size: 40px;
+	color: #d797b9;
+	transition: 1s;
+}
+
+nav ul li a:hover{
+	color: white;
+	transition: 1s;
+}
+
+.container{
+	background-color: rgba(0,0,0,0.6);
+	height: 400px;
+	margin: 87px 40px 87px 40px;
+	border-radius: 25px;
+
+}
+
+.opcao{
+	background-color: rgba(215,151,185,0.5);
+	height: 320px;
+	width: 549px;
+	margin: 20px 0px 20px 32px;
+	padding: 20px 20px 20px 20px;
+	display: inline-block;
+	font-size: 70px;
+	text-align: center;
+}
+
+.opcao:hover{
+	color: #d797b9;
+	transition: 1s;
+	background-color: rgba(0,191,255,0.8);
+}
+
+.border1{
+	border-radius: 15px 15px 15px 15px;
+	/*background-image: url("../images/opcao1.png");*/
+	background-color: rgba(0,191,255,0.6);
+	opacity: 0.6;
+}
+
+.border2{
+	border-radius: 15px 15px 15px 15px;
+	background-image: url("../images/opcao2.png");
+	opacity: 0.6;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+	transition: 1s;
+}
+
+.opcao{
+	color: black;
+	transition: 1s;
+}
+
+#rodape{
+	background-color: rgba(0,0,0,0.5);
+	height: 60px;
+	text-align: center;
+	font-family: sans-serif;
+	color: #d797b9;
+	font-size: 20px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+#logo{
+	/*background-size: cover;
+	background-image: url("../images/logo.png");
+	background-repeat: no-repeat;*/
+	display: inline;
+	background-position: center;
+	font-size: 53px;
+	margin: 0;
+	padding: 0;
+	float: left;
+	z-index: 1;
+}
+
+#main{
+	position: relative;
+}
+
+img{
+	background-size: cover;
+}
+
+h2{
+	text-align: right;
+	color: darkorange;
+}
+
+h3{
+	text-align: center;
+}
+
+textarea{
+    background-color: antiquewhite;
+	margin-left: 32%;
+	opacity: 0.8;
+}
